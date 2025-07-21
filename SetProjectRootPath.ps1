@@ -2,7 +2,7 @@
 $projectIdentifier = "MD2025"
 
 # Get the project root folder path
-$projectRootPath = (Get-Location).Path
+$projectRootPath = Split-Path -Path (Get-Location).Path -Parent
 
 # Define the paths
 $dairyMemoPath = Join-Path $projectRootPath "30_DairyMemo"
