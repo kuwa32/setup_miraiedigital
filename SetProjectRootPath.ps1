@@ -5,7 +5,7 @@ $projectIdentifier = "MD2025"
 $projectRootPath = Split-Path -Path (Get-Location).Path -Parent
 
 # Define the paths
-$dairyMemoPath = Join-Path $projectRootPath "30_DairyMemo"
+$dairyMemoPath = Join-Path $projectRootPath "03_DairyMemo"
 $toolsPath = Join-Path $projectRootPath "99_CommonTools"
 
 # Set environment variables with project-specific keys

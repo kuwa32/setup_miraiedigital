@@ -1,30 +1,39 @@
-
 # Create base directory
 New-Item -ItemType Directory -Force -Path "C:\MiraieDigital"
 
-# Create subdirectories
-$subdirs = @(
-    "99_CommonTools",
-    "30_DairyMemo",
-    "20_Taiken_0728",
-    "01_Day01_0913",
-    "02_Day02_0927",
-    "03_Day03_1004",
-    "04_Day04_1011",
-    "05_Day05_1122",
-    "06_Day06_1129",
-    "07_Day07_1206",
-    "08_Day08_1227",
-    "09_Day09_0117",
-    "10_Day10_0131",
-    "11_Day11_0207",
-    "12_Day12_0221",
-    "13_Day13_0307"
+# Create root directories
+$rootDirs = @(
+    "01_Main",
+    "02_Special",
+    "03_DairyMemo",
+    "99_CommonTools"
 )
-
-foreach ($subdir in $subdirs) {
-    New-Item -ItemType Directory -Force -Path "C:\MiraieDigital\$subdir"
+foreach ($dir in $rootDirs) {
+    New-Item -ItemType Directory -Force -Path "C:\MiraieDigital\$dir"
 }
+
+# Create subdirectories under 01_Main
+$mainSubdirs = @(
+    "Day01_09ŒŽ13“ú",
+    "Day02_09ŒŽ27“ú",
+    "Day03_10ŒŽ04“ú",
+    "Day04_10ŒŽ11“ú",
+    "Day05_11ŒŽ22“ú",
+    "Day06_11ŒŽ29“ú",
+    "Day07_12ŒŽ06“ú",
+    "Day08_12ŒŽ27“ú",
+    "Day09_01ŒŽ17“ú",
+    "Day10_01ŒŽ31“ú",
+    "Day11_02ŒŽ07“ú",
+    "Day12_02ŒŽ21“ú",
+    "Day13_03ŒŽ07“ú"
+)
+foreach ($subdir in $mainSubdirs) {
+    New-Item -ItemType Directory -Force -Path "C:\MiraieDigital\01_Main\$subdir"
+}
+
+# Create subdirectory under 02_Special
+New-Item -ItemType Directory -Force -Path "C:\MiraieDigital\02_Special\20_Taiken_0728"
 
 # Copy files to 99_CommonTools
 Copy-Item -Path ".\SetProjectRootPath.ps1" -Destination "C:\MiraieDigital\99_CommonTools"
