@@ -1,5 +1,5 @@
 # Project-specific identifier (shortened)
-$projectIdentifier = "F0615"
+$projectIdentifier = "MD2025"
 
 # Environment variable keys
 $projectRootKey = "${projectIdentifier}_ROOT"
