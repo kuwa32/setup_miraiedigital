@@ -5,7 +5,7 @@ New-Item -ItemType Directory -Force -Path "C:\MiraieDigital"
 $rootDirs = @(
     "01_Main",
     "02_Special",
-    "03_DairyMemo",
+    "03_DailyMemo",
     "99_CommonTools"
 )
 foreach ($dir in $rootDirs) {
