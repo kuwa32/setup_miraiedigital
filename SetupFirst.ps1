@@ -33,7 +33,7 @@ foreach ($subdir in $mainSubdirs) {
 }
 
 # Create subdirectory under 02_Special
-New-Item -ItemType Directory -Force -Path "C:\MiraieDigital\02_Special\20_Taiken_0728"
+New-Item -ItemType Directory -Force -Path "C:\MiraieDigital\02_Special\‘ÌŒ±_07ŒŽ28“ú"
 
 # Copy files to 99_CommonTools
 Copy-Item -Path ".\SetProjectRootPath.ps1" -Destination "C:\MiraieDigital\99_CommonTools"
