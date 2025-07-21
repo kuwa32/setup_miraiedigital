@@ -28,10 +28,10 @@ foreach ($subdir in $subdirs) {
 
 # Copy files to 99_CommonTools
 Copy-Item -Path ".\SetProjectRootPath.ps1" -Destination "C:\MiraieDigital\99_CommonTools"
-Copy-Item -Path ".\SetProjectRootdPath.bat" -Destination "C:\MiraieDigital\99_CommonTools"
+Copy-Item -Path ".\SetProjectRootPath.bat" -Destination "C:\MiraieDigital\99_CommonTools"
 Copy-Item -Path ".\CheckEnvironmentVariables.ps1" -Destination "C:\MiraieDigital\99_CommonTools"
-Copy-Item -Path ".\ä»Šæ—¥ã®äºˆå®š.ps1" -Destination "C:\MiraieDigital\99_CommonTools"
+Copy-Item -Path ".\¡“ú‚Ì—\’è.ps1" -Destination "C:\MiraieDigital\99_CommonTools"
 
-# Copy ä»Šæ—¥ã®äºˆå®š.bat to Desktop
+# Copy ¡“ú‚Ì—\’è.bat to Desktop
 $desktopPath = [System.Environment]::GetFolderPath('Desktop')
-Copy-Item -Path ".\ä»Šæ—¥ã®äºˆå®š.bat" -Destination $desktopPath
+Copy-Item -Path ".\¡“ú‚Ì—\’è.bat" -Destination $desktopPath
